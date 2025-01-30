@@ -104,7 +104,7 @@ export default{
       rules:{
         require:v => !!v || 'Required',
         email:v=> /.+@.+/.test(v) || 'E-mail must be valid',
-        code:v=> v.length()===5 || 'wrong digits'
+        code:v=> v.length===5 || 'wrong digits'
       }
   })
   ,
