@@ -60,7 +60,6 @@ export default new Vuex.Store({
     getproduct({commit}){
       axios.get('/api/getproduct').then(response =>{
         commit('setproduct',response.data.product);
-        console.log(response.data);
 
       })
     }

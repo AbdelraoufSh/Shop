@@ -38,7 +38,9 @@ export default{
     },
     created(){
         this.$store.dispatch('getproduct');
+        this.$store.dispatch('getproduct');
     },
+
     mounted(){
     },
     beforeUpdate(){
